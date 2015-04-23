@@ -1,0 +1,1 @@
+PODS_AEROGEAR_PUSH_SWIFT_OTHER_LDFLAGS = -framework "Foundation"

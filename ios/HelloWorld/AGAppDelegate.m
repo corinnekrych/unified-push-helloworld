@@ -16,7 +16,8 @@
  */
 
 #import "AGAppDelegate.h"
-#import <AeroGearPush/AeroGearPush.h>
+//#import <AeroGearPush/AeroGearPush.h>
+@import AeroGearPush;
 
 @implementation AGAppDelegate
 
@@ -82,13 +83,14 @@
     
     // WARNING: make sure, you start JBoss with the -b 0.0.0.0 option, to bind on all interfaces
     // from the iPhone, you can NOT use localhost :)
-    [[AGDeviceRegistration alloc] initWithServerURL:[NSURL URLWithString:@"<# URL of the running AeroGear UnifiedPush Server #>"]];
-    
+    [[AGDeviceRegistration alloc] initWithServerURL:[NSURL URLWithString:@"http://192.168.0.2:8080/ag-push/"]];
+    NSLog(@"init AGDeviceRegistration %@", registration);
     [registration registerWithClientInfo:^(id<AGClientDeviceInformation> clientInfo) {
+         NSLog(@"registerWithClient block AGDeviceRegistration");
         // You need to fill the 'Variant Id' together with the 'Variant Secret'
         // both received when performing the variant registration with the server.
-        [clientInfo setVariantID:@"<# Variant Id #>"];
-        [clientInfo setVariantSecret:@"<# Variant Secret #>"];
+        [clientInfo setVariantID:@"e02c398d-78f0-4536-b66c-5b780da8128c"];
+        [clientInfo setVariantSecret:@"ac7f957e-92fa-41bc-aaa6-3a9ca93ee03e"];
         
         // if the deviceToken value is nil, no registration will be performed
         // and the failure callback is being invoked!
@@ -105,14 +107,14 @@
         
         
     } success:^() {
-        
+         NSLog(@"success AGDeviceRegistration");
         // Send NSNotification for success_registered, will be handle by registered AGViewController
         NSNotification *notification = [NSNotification notificationWithName:@"success_registered" object:nil];
         [[NSNotificationCenter defaultCenter] postNotification:notification];
         NSLog(@"Unified Push registration successful");
         
     } failure:^(NSError *error) {
-        
+        NSLog(@"error AGDeviceRegistration");
         // Send NSNotification for error_register, will be handle by registered AGViewController
         NSNotification *notification = [NSNotification notificationWithName:@"error_register" object:nil];
         [[NSNotificationCenter defaultCenter] postNotification:notification];

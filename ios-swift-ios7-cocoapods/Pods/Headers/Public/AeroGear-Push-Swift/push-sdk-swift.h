@@ -1,0 +1,1 @@
+../../../AeroGear-Push-Swift/push-sdk-swift/push-sdk-swift.h

@@ -1,0 +1,6 @@
+framework module AeroGearPush {
+  umbrella header "Pods-AeroGear-Push-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

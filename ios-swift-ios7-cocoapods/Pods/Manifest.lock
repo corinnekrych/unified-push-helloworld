@@ -1,0 +1,21 @@
+PODS:
+  - AeroGear-Push-Swift (1.0.0)
+
+DEPENDENCIES:
+  - AeroGear-Push-Swift (from `https://github.com/corinnekrych/aerogear-ios-push.git`,
+    branch `deplyment.target.7.1`)
+
+EXTERNAL SOURCES:
+  AeroGear-Push-Swift:
+    :branch: deplyment.target.7.1
+    :git: https://github.com/corinnekrych/aerogear-ios-push.git
+
+CHECKOUT OPTIONS:
+  AeroGear-Push-Swift:
+    :commit: 7817622a54cd9ae91c29d5dd2f2af2c4624fab2f
+    :git: https://github.com/corinnekrych/aerogear-ios-push.git
+
+SPEC CHECKSUMS:
+  AeroGear-Push-Swift: d516deff98f0147e07e59d676dc70008b124e2e1
+
+COCOAPODS: 0.36.3

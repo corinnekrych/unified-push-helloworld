@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48DD366818F3F2C1009A02E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DD366718F3F2C1009A02E2 /* Foundation.framework */; };
-		48DD366A18F3F2C1009A02E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DD366918F3F2C1009A02E2 /* CoreGraphics.framework */; };
-		48DD366C18F3F2C1009A02E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DD366B18F3F2C1009A02E2 /* UIKit.framework */; };
+		48CE849C1AE79B10008738BF /* push-sdk-swift in Resources */ = {isa = PBXBuildFile; fileRef = 48CE849B1AE79B10008738BF /* push-sdk-swift */; };
+		48CE849D1AE79E47008738BF /* AeroGearPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F75E9E51937313E004D0D36 /* AeroGearPush.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		48DD366818F3F2C1009A02E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DD366718F3F2C1009A02E2 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		48DD366A18F3F2C1009A02E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DD366918F3F2C1009A02E2 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		48DD366C18F3F2C1009A02E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DD366B18F3F2C1009A02E2 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		48DD367218F3F2C1009A02E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48DD367018F3F2C1009A02E2 /* InfoPlist.strings */; };
 		48DD367418F3F2C1009A02E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DD367318F3F2C1009A02E2 /* main.m */; };
 		48DD367818F3F2C1009A02E2 /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DD367718F3F2C1009A02E2 /* AGAppDelegate.m */; };
@@ -21,7 +23,6 @@
 		48DD368918F3F2C1009A02E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DD366B18F3F2C1009A02E2 /* UIKit.framework */; };
 		48DD369118F3F2C1009A02E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48DD368F18F3F2C1009A02E2 /* InfoPlist.strings */; };
 		48DD369318F3F2C1009A02E2 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DD369218F3F2C1009A02E2 /* HelloWorldTests.m */; };
-		6F75E9E61937313E004D0D36 /* AeroGearPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F75E9E51937313E004D0D36 /* AeroGearPush.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48CE849B1AE79B10008738BF /* push-sdk-swift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "push-sdk-swift"; sourceTree = SOURCE_ROOT; };
+		48CE849E1AE7A18A008738BF /* AeroGearPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AeroGearPush.framework; path = ../AeroGearPush.framework; sourceTree = "<group>"; };
 		48DD366418F3F2C1009A02E2 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48DD366718F3F2C1009A02E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48DD366918F3F2C1009A02E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F75E9E61937313E004D0D36 /* AeroGearPush.framework in Frameworks */,
+				48CE849D1AE79E47008738BF /* AeroGearPush.framework in Frameworks */,
 				48DD366A18F3F2C1009A02E2 /* CoreGraphics.framework in Frameworks */,
 				48DD366C18F3F2C1009A02E2 /* UIKit.framework in Frameworks */,
 				48DD366818F3F2C1009A02E2 /* Foundation.framework in Frameworks */,
@@ -85,6 +88,7 @@
 		48DD365B18F3F2C1009A02E2 = {
 			isa = PBXGroup;
 			children = (
+				48CE849E1AE7A18A008738BF /* AeroGearPush.framework */,
 				48DD366D18F3F2C1009A02E2 /* HelloWorld */,
 				48DD368C18F3F2C1009A02E2 /* HelloWorldTests */,
 				48DD366618F3F2C1009A02E2 /* Frameworks */,
@@ -130,6 +134,7 @@
 		48DD366E18F3F2C1009A02E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48CE849B1AE79B10008738BF /* push-sdk-swift */,
 				48DD366F18F3F2C1009A02E2 /* HelloWorld-Info.plist */,
 				48DD367018F3F2C1009A02E2 /* InfoPlist.strings */,
 				48DD367318F3F2C1009A02E2 /* main.m */,
@@ -236,6 +241,7 @@
 				48DD368018F3F2C1009A02E2 /* Images.xcassets in Resources */,
 				48DD367218F3F2C1009A02E2 /* InfoPlist.strings in Resources */,
 				48DD367B18F3F2C1009A02E2 /* Main.storyboard in Resources */,
+				48CE849C1AE79B10008738BF /* push-sdk-swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -370,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -387,6 +393,7 @@
 					"$(inherited)",
 					$SOURCE_ROOT,
 					"$(PROJECT_DIR)",
+					"/Users/corinne/workspace/fh_push/ios7_test/unified-push-helloworld",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
@@ -395,6 +402,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +422,7 @@
 					"$(inherited)",
 					$SOURCE_ROOT,
 					"$(PROJECT_DIR)",
+					"/Users/corinne/workspace/fh_push/ios7_test/unified-push-helloworld",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
@@ -422,6 +431,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

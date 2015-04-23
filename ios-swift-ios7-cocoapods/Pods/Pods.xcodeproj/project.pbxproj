@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04ED3D6140C217CF396C9C45 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D24D44F057FC7207E3A218 /* Pods-dummy.m */; };
+		1D459B0526569D054F4692F4 /* push-sdk-swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BBFA858EE9FC21518C72E8 /* push-sdk-swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43E859D94829B0DF0C66A92D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B644ED157DC4B681C2616E /* Foundation.framework */; };
+		5148210F5B0EB6F724CC0FFD /* Pods-AeroGear-Push-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C9E921D1D615873FDCFB55 /* Pods-AeroGear-Push-Swift-dummy.m */; };
+		53857946C383A1748610FB83 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68951C543453F4A1C829AE27 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C4451B3D5E5BC636C4B5163 /* AGDeviceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A46C37297EC06E4B7E2185 /* AGDeviceRegistration.swift */; };
+		B021540D6E75AC30C1B61F5D /* AGClientDeviceInformationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9CD67B5D2DB21076F2E968 /* AGClientDeviceInformationImpl.swift */; };
+		B16E5CF215A61091B53C9DE8 /* AGClientDeviceInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D15B4505FEF0710F69F4E8 /* AGClientDeviceInformation.swift */; };
+		B982A954BC2796700FBF4131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B644ED157DC4B681C2616E /* Foundation.framework */; };
+		DA6A705C9108D61733C064AC /* Pods-AeroGear-Push-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D5768FBDF514A9635AD045 /* Pods-AeroGear-Push-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71A48366BB159285C10C4E47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10CBAA9CD171C368AF67A9B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8573FE5641BF7FF40559B22;
+			remoteInfo = "Pods-AeroGear-Push-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0012DEB8E54AE0933BF2E07C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		059111CC9848A0CA2D1CF92A /* Pods-AeroGear-Push-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroGear-Push-Swift.xcconfig"; sourceTree = "<group>"; };
+		082680269A485FB699076987 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		0EB72775F14120436861E031 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		10921152DD59C3FBF61DE4C8 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		16D21A5F3E3A571DDCA8AFDD /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		18A46C37297EC06E4B7E2185 /* AGDeviceRegistration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AGDeviceRegistration.swift; path = "push-sdk-swift/AGDeviceRegistration.swift"; sourceTree = "<group>"; };
+		31D24D44F057FC7207E3A218 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		564C65BD9A630DCFB3840975 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59B644ED157DC4B681C2616E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5E5B5F1EA983F2DC753B1C3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60D15B4505FEF0710F69F4E8 /* AGClientDeviceInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AGClientDeviceInformation.swift; path = "push-sdk-swift/AGClientDeviceInformation.swift"; sourceTree = "<group>"; };
+		62D5768FBDF514A9635AD045 /* Pods-AeroGear-Push-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AeroGear-Push-Swift-umbrella.h"; sourceTree = "<group>"; };
+		68951C543453F4A1C829AE27 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		73FD0CF87934746295CC1589 /* Pods-AeroGear-Push-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AeroGear-Push-Swift.modulemap"; sourceTree = "<group>"; };
+		766AD418F67E9253B74DD2D9 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		81273F8872D435011D7C2227 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		91BBFA858EE9FC21518C72E8 /* push-sdk-swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "push-sdk-swift.h"; path = "push-sdk-swift/push-sdk-swift.h"; sourceTree = "<group>"; };
+		B4FD9C3AAB61B4BC5AB83246 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		B87B7C9545F931A33A01FBE5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		CF7911E9AF25176973D40657 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		D1E983F451BF0099762265E3 /* Pods-AeroGear-Push-Swift-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroGear-Push-Swift-Private.xcconfig"; sourceTree = "<group>"; };
+		E33725529079E022FD67B55A /* AeroGearPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C9E921D1D615873FDCFB55 /* Pods-AeroGear-Push-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AeroGear-Push-Swift-dummy.m"; sourceTree = "<group>"; };
+		EB9CD67B5D2DB21076F2E968 /* AGClientDeviceInformationImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AGClientDeviceInformationImpl.swift; path = "push-sdk-swift/AGClientDeviceInformationImpl.swift"; sourceTree = "<group>"; };
+		F15BD733A75830BE555FBCE0 /* Pods-AeroGear-Push-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AeroGear-Push-Swift-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82C7F1EC97291462ADBCCBA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E859D94829B0DF0C66A92D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB91612578F340C29216BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B982A954BC2796700FBF4131 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00870263F80DF1518FE48FA5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B5F1EA983F2DC753B1C3F /* Info.plist */,
+				73FD0CF87934746295CC1589 /* Pods-AeroGear-Push-Swift.modulemap */,
+				059111CC9848A0CA2D1CF92A /* Pods-AeroGear-Push-Swift.xcconfig */,
+				D1E983F451BF0099762265E3 /* Pods-AeroGear-Push-Swift-Private.xcconfig */,
+				E6C9E921D1D615873FDCFB55 /* Pods-AeroGear-Push-Swift-dummy.m */,
+				F15BD733A75830BE555FBCE0 /* Pods-AeroGear-Push-Swift-prefix.pch */,
+				62D5768FBDF514A9635AD045 /* Pods-AeroGear-Push-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AeroGear-Push-Swift";
+			sourceTree = "<group>";
+		};
+		513D8E7AE8AF11BA72B7C4C2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				59B644ED157DC4B681C2616E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		58467B16D163B72C827F9AE0 = {
+			isa = PBXGroup;
+			children = (
+				10921152DD59C3FBF61DE4C8 /* Podfile */,
+				78852B14346CAC1A9ABCFF17 /* Frameworks */,
+				CFD5824DA93345584A594092 /* Pods */,
+				9C07414888FCFCBBC372FE25 /* Products */,
+				C0C0A8C1D6AF828F4026853D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		59DD9A5723C877D387FDA5BC /* AeroGear-Push-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				60D15B4505FEF0710F69F4E8 /* AGClientDeviceInformation.swift */,
+				EB9CD67B5D2DB21076F2E968 /* AGClientDeviceInformationImpl.swift */,
+				18A46C37297EC06E4B7E2185 /* AGDeviceRegistration.swift */,
+				91BBFA858EE9FC21518C72E8 /* push-sdk-swift.h */,
+				00870263F80DF1518FE48FA5 /* Support Files */,
+			);
+			path = "AeroGear-Push-Swift";
+			sourceTree = "<group>";
+		};
+		78852B14346CAC1A9ABCFF17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				513D8E7AE8AF11BA72B7C4C2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C07414888FCFCBBC372FE25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E33725529079E022FD67B55A /* AeroGearPush.framework */,
+				0012DEB8E54AE0933BF2E07C /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0C0A8C1D6AF828F4026853D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC4F77DC35D4D0236402C5 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CFD5824DA93345584A594092 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59DD9A5723C877D387FDA5BC /* AeroGear-Push-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFAC4F77DC35D4D0236402C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				564C65BD9A630DCFB3840975 /* Info.plist */,
+				082680269A485FB699076987 /* Pods.modulemap */,
+				766AD418F67E9253B74DD2D9 /* Pods-acknowledgements.markdown */,
+				0EB72775F14120436861E031 /* Pods-acknowledgements.plist */,
+				31D24D44F057FC7207E3A218 /* Pods-dummy.m */,
+				CF7911E9AF25176973D40657 /* Pods-environment.h */,
+				16D21A5F3E3A571DDCA8AFDD /* Pods-frameworks.sh */,
+				81273F8872D435011D7C2227 /* Pods-resources.sh */,
+				68951C543453F4A1C829AE27 /* Pods-umbrella.h */,
+				B4FD9C3AAB61B4BC5AB83246 /* Pods.debug.xcconfig */,
+				B87B7C9545F931A33A01FBE5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		722AECDBA530D8A85FF3F078 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53857946C383A1748610FB83 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ED0CAF2EC7E29FD8F8CD774 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6A705C9108D61733C064AC /* Pods-AeroGear-Push-Swift-umbrella.h in Headers */,
+				1D459B0526569D054F4692F4 /* push-sdk-swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0288C140E3D41601DC556225 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCFED2C71C0BEF2FE384D852 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				92E8D2001E77351FB3411AA8 /* Sources */,
+				82C7F1EC97291462ADBCCBA4 /* Frameworks */,
+				722AECDBA530D8A85FF3F078 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9CC80359DCCC3C63FE478D2 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 0012DEB8E54AE0933BF2E07C /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8573FE5641BF7FF40559B22 /* Pods-AeroGear-Push-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7F3FC7B7CBE67AB77BB7A3 /* Build configuration list for PBXNativeTarget "Pods-AeroGear-Push-Swift" */;
+			buildPhases = (
+				E754DA824A5758ADD24473CC /* Sources */,
+				9AB91612578F340C29216BEF /* Frameworks */,
+				7ED0CAF2EC7E29FD8F8CD774 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AeroGear-Push-Swift";
+			productName = "Pods-AeroGear-Push-Swift";
+			productReference = E33725529079E022FD67B55A /* AeroGearPush.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10CBAA9CD171C368AF67A9B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 9C2393BE9DA99BE0D1775598 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58467B16D163B72C827F9AE0;
+			productRefGroup = 9C07414888FCFCBBC372FE25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0288C140E3D41601DC556225 /* Pods */,
+				C8573FE5641BF7FF40559B22 /* Pods-AeroGear-Push-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92E8D2001E77351FB3411AA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ED3D6140C217CF396C9C45 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E754DA824A5758ADD24473CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16E5CF215A61091B53C9DE8 /* AGClientDeviceInformation.swift in Sources */,
+				B021540D6E75AC30C1B61F5D /* AGClientDeviceInformationImpl.swift in Sources */,
+				8C4451B3D5E5BC636C4B5163 /* AGDeviceRegistration.swift in Sources */,
+				5148210F5B0EB6F724CC0FFD /* Pods-AeroGear-Push-Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9CC80359DCCC3C63FE478D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AeroGear-Push-Swift";
+			target = C8573FE5641BF7FF40559B22 /* Pods-AeroGear-Push-Swift */;
+			targetProxy = 71A48366BB159285C10C4E47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F824BA1D4581D74F4654D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4FD9C3AAB61B4BC5AB83246 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6EA0E9E86B229B7CBA5740B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1E983F451BF0099762265E3 /* Pods-AeroGear-Push-Swift-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AeroGear-Push-Swift/Pods-AeroGear-Push-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AeroGear-Push-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AeroGear-Push-Swift/Pods-AeroGear-Push-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AeroGearPush;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		896AADB65A96732E5D6495DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E3763ED64FA8EAA373071D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1E983F451BF0099762265E3 /* Pods-AeroGear-Push-Swift-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AeroGear-Push-Swift/Pods-AeroGear-Push-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AeroGear-Push-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AeroGear-Push-Swift/Pods-AeroGear-Push-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AeroGearPush;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C17A5AE9413ED9774AF53932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87B7C9545F931A33A01FBE5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8704FA75EB144995490A96A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C2393BE9DA99BE0D1775598 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8704FA75EB144995490A96A /* Debug */,
+				896AADB65A96732E5D6495DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7F3FC7B7CBE67AB77BB7A3 /* Build configuration list for PBXNativeTarget "Pods-AeroGear-Push-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA0E9E86B229B7CBA5740B7 /* Debug */,
+				9E3763ED64FA8EAA373071D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCFED2C71C0BEF2FE384D852 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F824BA1D4581D74F4654D33 /* Debug */,
+				C17A5AE9413ED9774AF53932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10CBAA9CD171C368AF67A9B8 /* Project object */;
+}

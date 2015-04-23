@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+xcodeproj 'HelloWorldSwift.xcodeproj'
+platform :ios, '7.1'
+use_frameworks!
+
+pod 'AeroGear-Push-Swift', :git => "https://github.com/corinnekrych/aerogear-ios-push.git", :branch => "deplyment.target.7.1"
+#pod 'Quick', :git => 'https://github.com/Quick/Quick.git', :branch => 'master'
