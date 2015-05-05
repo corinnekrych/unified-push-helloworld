@@ -29,12 +29,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let settings = UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+        // When the app is launched due to a push notification
         if let options = launchOptions {
             if let option : NSDictionary = options[UIApplicationLaunchOptionsRemoteNotificationKey] as? NSDictionary {
                 let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults();
+                
+                // 1. Get metrics id to save it for latter usage when doing regitration
+                if let metrics = option["aerogear-push-id"] as? String {
+                    defaults.setObject(metrics, forKey: "metricsId")
+                    defaults.synchronize()
+                }
+                
+                // 2. Send a message received signal to display the notification in the table.
                 if let aps : NSDictionary = option["aps"] as? NSDictionary {
                     if let alert : String = aps["alert"] as? String {
                         defaults.setObject(alert, forKey: "message_received")
+                        defaults.synchronize()
+                    } else {
+                        let msg = aps["alert"]!["body"] as! String
+                        defaults.setObject(msg, forKey: "message_received")
                         defaults.synchronize()
                     }
                 }
@@ -75,6 +89,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // base URL where the "AeroGear Unified Push Server" is running.
         let registration = AGDeviceRegistration(serverURL: NSURL(string: "<# URL of the running AeroGear UnifiedPush Server #>")!)
         
+        // Send metrics whenever avilable
+        var metricsId: String?
+        let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults();
+        if(defaults.objectForKey("metricsId") != nil) {
+            metricsId = defaults.objectForKey("metricsId") as? String
+            defaults.removeObjectForKey("metricsId")
+            defaults.synchronize()
+        }
+        
         // perform registration of this device
         registration.registerWithClientInfo({ (clientInfo: AGClientDeviceInformation!) in
             
@@ -96,10 +119,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             clientInfo.osVersion = currentDevice.systemVersion
             clientInfo.deviceType = currentDevice.model
             },
+            metricsId: metricsId,
             
             success: {
                 // successfully registered!
-                println("successfully registered with UPS!")
+                println("Successfully registered with UPS!")
                 
                 // send NSNotification for success_registered, will be handle by registered AGViewController
                 let notification = NSNotification(name:"success_registered", object: nil)
