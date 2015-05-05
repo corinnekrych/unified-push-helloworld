@@ -135,7 +135,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 let notification = NSNotification(name:"error_register", object: nil)
                 NSNotificationCenter.defaultCenter().postNotification(notification)
-            })
+        })
     }
     
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
@@ -149,5 +149,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let notification:NSNotification = NSNotification(name:"message_received", object:nil, userInfo:userInfo)
         NSNotificationCenter.defaultCenter().postNotification(notification)
         println("UPS message received: \(userInfo)")
+        if application.applicationState == UIApplicationState.Inactive || application.applicationState == UIApplicationState.Background  {
+            //opened from a push notification when the app was on background
+            println("HelloWorld App was is background and has been opened due to push notification")
+            // TODO send metrics to REST endpoint
+        }
     }
 }
