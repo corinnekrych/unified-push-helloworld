@@ -24,9 +24,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Add some categories
+        let textAction = UIMutableUserNotificationAction()
+        textAction.identifier = "TEXT_ACTION"
+        textAction.title = "Reply"
+        textAction.authenticationRequired = false
+        textAction.destructive = false
+//        if #available(iOS 9.0, *) {
+//            textAction.behavior = .TextInput
+//        }
+        let declineAction = UIMutableUserNotificationAction()
+        declineAction.identifier = "DECLINE_ACTION"
+        declineAction.title = "Decline"
+        declineAction.authenticationRequired = false
+        declineAction.destructive = true
+        
+        let category = UIMutableUserNotificationCategory()
+        category.identifier = "CATEGORY_ID"
+        category.setActions([textAction, declineAction], forContext: .Default)
+        category.setActions([textAction, declineAction], forContext: .Minimal)
+        
+        let categories = NSSet(object: category) as! Set<UIUserNotificationCategory>
         
         // bootstrap the registration process by asking the user to 'Accept' and then register with APNS thereafter
-        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: categories)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         UIApplication.sharedApplication().registerForRemoteNotifications()
         
@@ -131,5 +152,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // No additioanl data to fetch
         fetchCompletionHandler(UIBackgroundFetchResult.NoData)
     }
+    
     
 }
