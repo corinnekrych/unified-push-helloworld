@@ -6,4 +6,9 @@ curl -u "6006da05-0210-4548-ae16-ef3882465312:64845339-dfff-4f52-b264-0f6b97c9f8
 
 ## Send notification with a text input categorie
 
-curl -u "6006da05-0210-4548-ae16-ef3882465312:64845339-dfff-4f52-b264-0f6b97c9f803" -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"message": {"alert": "HELLO!","sound": "default","badge": 2, "apns": { "title" : "Hello apple watch", "action-category": "CATEGORY_ID", "content-available": true, "action" : "TEXT_ACTION"}},"config": {"ttl": 3600}}' http://192.168.0.10:8080/ag-push/rest/sender
+curl -u "6006da05-0210-4548-ae16-ef3882465312:64845339-dfff-4f52-b264-0f6b97c9f803" -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"message": {"alert": "HELLO!","sound": "default","badge": 2, "apns": { "title" : "Hello apple watch", "action-category": "CATEGORY_ID", "content-available": true}},"config": {"ttl": 3600}}' http://192.168.0.10:8080/ag-push/rest/sender
+
+
+[{"title": "Reply","identifier": "TEXT_ACTION"},{"title": "Decline","identifier": "DECLINE_ACTION","destructive": true}]
+
+

@@ -12,6 +12,7 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var displayLabel: WKInterfaceLabel!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -30,11 +31,12 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func handleActionWithIdentifier(identifier: String?, forRemoteNotification remoteNotification: [NSObject : AnyObject]) {
-        print("REceived - id is:: \(identifier)")
-        print("REceived - content \(remoteNotification)")
+        //print("REceived - id is:: \(identifier)")
+        //print("REceived - content \(remoteNotification)")
         if let id = identifier where id == "TEXT_ACTION" {
             
-            print("TEXT!!!")
+            //print("TEXT!!!")
+            displayLabel.setText(id)
         }
     }
 
