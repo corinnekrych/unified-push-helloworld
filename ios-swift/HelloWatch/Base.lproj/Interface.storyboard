@@ -10,9 +10,9 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelloWatch" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Ok" id="TEH-d8-XDz"/>
-                        <button width="1" alignment="left" title="Maybe" id="AIT-2F-UmK"/>
+                        <label alignment="center" verticalAlignment="center" text="Hello world" id="KLC-Ka-jcu"/>
                     </items>
+                    <color key="backgroundColor" red="0.36926161569999999" green="0.25131707910000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
