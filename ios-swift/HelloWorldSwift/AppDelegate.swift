@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.sharedApplication().registerForRemoteNotifications()
         
         // Send metrics when app is launched due to push notification
-        AGPushAnalytics.sendMetricsWhenAppLaunched(launchOptions)
+        //AGPushAnalytics.sendMetricsWhenAppLaunched(launchOptions)
         
         // Display all push messages (even the message used to open the app)
         if let options = launchOptions {
@@ -147,7 +147,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("UPS message received: \(userInfo)")
         
         // Send metrics when app is launched due to push notification
-        AGPushAnalytics.sendMetricsWhenAppAwoken(application.applicationState, userInfo: userInfo)
+        //AGPushAnalytics.sendMetricsWhenAppAwoken(application.applicationState, userInfo: userInfo)
         
         // No additioanl data to fetch
         fetchCompletionHandler(UIBackgroundFetchResult.NoData)
